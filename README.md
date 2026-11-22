@@ -277,5 +277,6 @@ age, gender and skin tone.
 SMILEsmileD by Daniel Hromada: https://github.com/hromi/SMILEsmileD
 The dataset is not included in this repository; the notebook and scripts download it.
 
-## License
-Code: MIT License (see `LICENSE`). The dataset has its own license; see the SMILEsmileD repository.
+
+## Author 
+Vigash kumar
