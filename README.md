@@ -1,0 +1,2 @@
+# Real-Time-Smile-Detection-and-Auto-Capture-with-a-LeNet-CNN-and-Explainability-AI-Analysis
+A real-time system that automatically takes a selfie when you smile. OpenCV's Haar cascade finds the face, and a LeNet convolutional neural network decides whether it is smiling. The selfie is saved after the smile is held for 5 frames. LayerCAM heatmaps show live which part of the face drove each decision.
