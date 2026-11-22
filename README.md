@@ -1,4 +1,4 @@
-# GrinCam: Real-Time Smile Detection with a CNN and Explainable AI
+# Real-Time Smile Detection and Auto Capture with a LeNet CNN and Explainability AI Analysis
 
 A real-time system that **automatically takes a selfie when you smile**.
 OpenCV's Haar cascade finds the face, and a LeNet convolutional neural network decides whether it is smiling. The selfie is saved after the smile is held for 5 frames.
@@ -274,7 +274,7 @@ age, gender and skin tone.
 ---
 
 ## Dataset
-SMILEsmileD by Daniel Hromada: https://github.com/hromi/SMILEsmileD
+SMILEsmileD data from https://github.com/hromi/SMILEsmileD
 The dataset is not included in this repository; the notebook and scripts download it.
 
 
