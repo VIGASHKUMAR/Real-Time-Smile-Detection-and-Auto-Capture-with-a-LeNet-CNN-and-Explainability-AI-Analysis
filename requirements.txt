@@ -1,0 +1,10 @@
+opencv-python<5
+tensorflow
+numpy
+pandas
+scikit-learn
+scikit-image
+matplotlib
+imageio-ffmpeg
+lime
+shap
