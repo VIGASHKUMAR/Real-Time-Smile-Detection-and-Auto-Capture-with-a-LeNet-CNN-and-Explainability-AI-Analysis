@@ -206,7 +206,7 @@ Or open `Smile_Selfie_Colab.ipynb` in Google Colab with a GPU. It downloads the 
 
 ## Use cases
 
-GrinCam detects a smile as a **visible facial expression** and uses it as a **trigger**.
+It detects a smile as a **visible facial expression** and uses it as a **trigger**.
 It does not infer emotions or evaluate people.
 
 **Intended use cases**
@@ -221,16 +221,6 @@ It does not infer emotions or evaluate people.
 7. **Base for other face-attribute triggers:** the same pipeline can be retrained for other
    visible cues, e.g. eyes open/closed for "no blinking" photos.
 
-**Not intended for**
-- Inferring emotions, mood or satisfaction (a smile is not proof of happiness).
-- Evaluating people such as job candidates, employees, students or customers. Emotion
-  recognition in workplaces and education is prohibited under the EU AI Act.
-- Surveillance or identifying people. GrinCam does not recognise *who* someone is.
-
-**Privacy by design**
-- Runs fully locally; no images are sent to any server.
-- Only captured selfies are saved, and only on the user's own device.
-- In public demos: inform people (a sign is enough) and delete photos after the event.
 
 ---
 
