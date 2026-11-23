@@ -204,6 +204,12 @@ Or open `Smile_Selfie_Colab.ipynb` in Google Colab with a GPU. It downloads the 
 
 ---
 
+### Training environment
+- **Platform:** Google Colab, NVIDIA Tesla T4 GPU
+- **Training time (benchmark run):** LeNet ≈ 18 s, Mini-Xception ≈ 99 s, MobileNetV2 ≈ 98 s
+- **Live app:** runs on an ordinary laptop **CPU**; no GPU needed for real-time detection.
+  
+
 ## Use cases
 
 It detects a smile as a **visible facial expression** and uses it as a **trigger**.
