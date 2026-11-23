@@ -192,6 +192,12 @@ python compare_models.py   # optional: model comparison (results.csv + charts)
 ```
 Or open `Smile_Selfie_Colab.ipynb` in Google Colab with a GPU. It downloads the dataset and runs everything for you.
 
+
+### Training environment
+- **Platform:** Google Colab, NVIDIA Tesla T4 GPU
+- **Training time (benchmark run):** LeNet ≈ 18 s, Mini-Xception ≈ 99 s, MobileNetV2 ≈ 98 s
+- **Live app:** runs on an ordinary laptop **CPU**; no GPU needed for real-time detection.
+  
 ---
 
 ## Settings you can change (`smile_selfie.py`)
@@ -203,13 +209,7 @@ Or open `Smile_Selfie_Colab.ipynb` in Google Colab with a GPU. It downloads the 
 | `COOLDOWN` | 3 | Seconds between two selfies |
 
 ---
-
-### Training environment
-- **Platform:** Google Colab, NVIDIA Tesla T4 GPU
-- **Training time (benchmark run):** LeNet ≈ 18 s, Mini-Xception ≈ 99 s, MobileNetV2 ≈ 98 s
-- **Live app:** runs on an ordinary laptop **CPU**; no GPU needed for real-time detection.
   
-
 ## Use cases
 
 It detects a smile as a **visible facial expression** and uses it as a **trigger**.
