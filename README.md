@@ -132,29 +132,9 @@ All six predictions are correct. With the mouth covered, occlusion, LIME and SHA
 5. LeNet outputs a smile probability. At 80% or above, the face counts as smiling (green box).
 6. After **5 smiling frames in a row**, save the clean frame to `selfies/`. A 3-second cooldown prevents duplicates.
 
-### Debugging story: domain shift
-At first, a clearly smiling test photo was classified as **"not smiling" with 99% confidence**.
-The cause: SMILEsmileD faces are tightly cropped (eyebrows to chin), but the Haar box also includes hair and forehead, so the mouth landed in a different place in the 28×28 input.
-Cropping the Haar box to match the training framing (remove the top 20% and 18% from each side) changed the prediction from **1% → 99% smiling**, with no change to the model.
 
 ---
 
-## Project structure
-
-```
-automated-selfie-system/
-├── train_model.py             # trains LeNet, saves smile_lenet.h5
-├── smile_selfie.py            # live webcam app (auto-capture, Grad-CAM, recording)
-├── gradcam.py                 # Grad-CAM, LayerCAM, occlusion heatmaps
-├── explain.py                 # LIME, SHAP and the faithfulness check
-├── compare_models.py          # trains and compares 5 models, makes charts
-├── Smile_Selfie_Colab.ipynb   # full explained walkthrough: data, training, evaluation, explainability
-├── smile_lenet.h5             # trained model (ready to use)
-├── requirements.txt
-└── assets/                    # images used in this README
-```
-
----
 
 ## How to run
 
